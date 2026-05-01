@@ -103,6 +103,10 @@ function ClassicTabLayout() {
             ),
         }}
       />
+      <Tabs.Screen
+        name="index"
+        options={{ href: null }}
+      />
     </Tabs>
   );
 }

@@ -60,13 +60,13 @@ export const ALL_APPS: AppInfo[] = [
   { id: "reddit", name: "Reddit", iconName: "reddit", category: "Social", accentColor: "#FF4500" },
   { id: "netflix", name: "Netflix", iconName: "netflix", category: "Entertainment", accentColor: "#E50914" },
   { id: "whatsapp", name: "WhatsApp", iconName: "whatsapp", category: "Messaging", accentColor: "#25D366" },
-  { id: "discord", name: "Discord", iconName: "discord", category: "Messaging", accentColor: "#5865F2" },
+  { id: "discord", name: "Discord", iconName: "pound-box", category: "Messaging", accentColor: "#5865F2" },
   { id: "chrome", name: "Chrome", iconName: "google-chrome", category: "Utility", accentColor: "#4285F4" },
   { id: "spotify", name: "Spotify", iconName: "spotify", category: "Music", accentColor: "#1DB954" },
   { id: "snapchat", name: "Snapchat", iconName: "snapchat", category: "Social", accentColor: "#FFFC00" },
   { id: "facebook", name: "Facebook", iconName: "facebook", category: "Social", accentColor: "#1877F2" },
   { id: "gmail", name: "Gmail", iconName: "gmail", category: "Productivity", accentColor: "#EA4335" },
-  { id: "telegram", name: "Telegram", iconName: "telegram", category: "Messaging", accentColor: "#2AABEE" },
+  { id: "telegram", name: "Telegram", iconName: "send", category: "Messaging", accentColor: "#2AABEE" },
   { id: "twitch", name: "Twitch", iconName: "twitch", category: "Entertainment", accentColor: "#9146FF" },
 ];
 

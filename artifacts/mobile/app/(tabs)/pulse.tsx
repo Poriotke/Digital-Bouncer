@@ -14,8 +14,10 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { AppUsageBar } from "@/components/AppUsageBar";
+import { UsageChart } from "@/components/UsageChart";
 import { useAegis } from "@/context/AegisContext";
 import { useColors } from "@/hooks/useColors";
+import { buildWeeklyData } from "@/utils/weeklyData";
 
 function formatTotal(minutes: number): string {
   if (minutes < 60) return `${Math.floor(minutes)}m`;
@@ -162,6 +164,10 @@ export default function PulseScreen() {
           </View>
         </View>
 
+        <View style={styles.chartSection}>
+          <UsageChart days={buildWeeklyData(usage)} />
+        </View>
+
         <View style={styles.appsList}>
           <View style={styles.sectionHeader}>
             <Text style={[styles.sectionTitle, { color: colors.mutedForeground }]}>
@@ -230,7 +236,8 @@ const styles = StyleSheet.create({
   statValue: { fontSize: 22, fontWeight: "800", letterSpacing: -0.5 },
   statLabel: { fontSize: 11, marginTop: 4, letterSpacing: 0.5 },
   statDivider: { width: 1, marginHorizontal: 8 },
-  appsList: { paddingHorizontal: 20, paddingTop: 16 },
+  chartSection: { paddingHorizontal: 20, paddingTop: 8 },
+  appsList: { paddingHorizontal: 20, paddingTop: 4 },
   sectionHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
