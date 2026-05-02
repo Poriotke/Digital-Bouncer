@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Digital Bouncer",
+    "slug": "digital-bouncer",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.poriot.digitalbouncer"
+    }
+  }
+}
+
